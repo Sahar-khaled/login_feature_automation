@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="28.076">
+    <testcase classname="F01_Login |" name="user login with standard_user" time="8.122">
+        <system-out><![CDATA[Given user link swag-labs page..............................................passed
+When user enter valid username "standard_user"..............................passed
+And enter password "secret_sauce"...........................................passed
+And Click on login button...................................................passed
+Then Validate that user login successfully..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F01_Login |" name="login with locked out user" time="10.624">
+        <system-out><![CDATA[Given user link swag-labs page..............................................passed
+When user enter name "locked_out_user"......................................passed
+And user enter pass "secret_sauce"..........................................passed
+And Click on login button...................................................passed
+Then Validate that user locked out displayed successfully...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F01_Login |" name="login with problem_user" time="8.902">
+        <system-out><![CDATA[Given user link swag-labs page..............................................passed
+When user enter username "problem_user".....................................passed
+And user enter password "secret_sauce"......................................passed
+And Click on login button...................................................passed
+Then Validate that the user logged in successfully..........................passed
+]]></system-out>
+    </testcase>
+</testsuite>
